@@ -15,16 +15,17 @@ Or just copy as follows:
   <div class="revealButton_successBox">
     <span class="revealButton_successText">THANKS!</span>
   </div>
-  <div class="revealButton_transitioner">
-    <div class="revealButton_fullTextBox  js-revealButton_triggerShow">
-      <span class="revealButton_fullText">REQUEST INVITE</span>
-    </div>
-    <div class="revealButton_formBox">
-      <input placeholder="Enter info..."  type="text" class="revealButton_inputText js-revealButton_input" />
-      <input type="button" class="revealButton_button" value="SEND" />
-    </div>
-    <span class="revealButton_clear"></span>
+
+  <div class="revealButton_fullTextBox  js-revealButton_triggerShow">
+    <span class="revealButton_fullText">REQUEST INVITE</span>
   </div>
+
+
+  <div class="revealButton_formBox">
+    <input placeholder="Enter info..."  type="text" class="revealButton_inputText js-revealButton_input" />
+    <input type="button" class="revealButton_button" value="SEND" />
+  </div>
+  <span class="revealButton_clear"></span>
 </div>
 ```
 
