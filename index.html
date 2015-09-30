@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Button Animation</title>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="reveal_button.css">
+
+</head>
+
+<body>
+
+  <h3>Examples</h3>
+
+  <div class="exampleBox">
+
+    <div class="revealButtonContainer" >
+      <div class="revealButton_successBox">
+        <span class="revealButton_successText">THANKS!</span>
+      </div>
+
+      <div class="revealButton_fullTextBox  js-revealButton_triggerShow">
+        <span class="revealButton_fullText">REQUEST INVITE</span>
+      </div>
+
+
+      <div class="revealButton_formBox">
+        <input placeholder="Enter info..."  type="text" class="revealButton_inputText js-revealButton_input" />
+        <input type="button" class="revealButton_button" value="SEND" />
+      </div>
+      <span class="revealButton_clear"></span>
+    </div>
+
+  </div>
+
+  <div class="exampleBox">
+    <div class="revealButtonContainer" style="height: 100px" >
+      <div class="revealButton_successBox">
+        <span class="revealButton_successText">THANKS!</span>
+      </div>
+
+      <div class="revealButton_fullTextBox  js-revealButton_triggerShow">
+        <span class="revealButton_fullText">REQUEST INVITE</span>
+      </div>
+
+
+      <div class="revealButton_formBox">
+        <input placeholder="Enter info..."  type="text" class="revealButton_inputText js-revealButton_input" />
+        <input type="button" class="revealButton_button" value="SEND" />
+      </div>
+      <span class="revealButton_clear"></span>
+    </div>
+  </div>
+
+  <div class="exampleBox exampleBox_large">
+    <div class="revealButtonContainer" style="height: 100px" >
+      <div class="revealButton_successBox">
+        <span class="revealButton_successText">THANKS!</span>
+      </div>
+
+      <div class="revealButton_fullTextBox  js-revealButton_triggerShow">
+        <span class="revealButton_fullText">REQUEST INVITE</span>
+      </div>
+
+
+      <div class="revealButton_formBox">
+        <input placeholder="Enter info..."  type="text" class="revealButton_inputText js-revealButton_input" />
+        <input type="button" class="revealButton_button" value="SEND" />
+      </div>
+      <span class="revealButton_clear"></span>
+    </div>
+  </div>
+
+
+  <script>
+    $(".js-revealButton_triggerShow").click(function(ev) {
+      var $container = $(ev.target).parents(".revealButtonContainer");
+      $container.addClass("show");
+      $container.find(".js-revealButton_input").focus();
+    })
+
+    $(".revealButton_button").click(function(ev) {
+      $(ev.target).parents(".revealButtonContainer").addClass("success");
+    })
+  </script>
+
+</body>
+</html>

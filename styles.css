@@ -1,0 +1,14 @@
+.exampleBox {
+  float: left;
+  padding: 20px;
+  margin-left: 20px;
+  margin-top: 20px;
+  width: 250px;
+  border: 1px solid rgba(1,1,1,.2);
+  border-radius: 5px;
+}
+
+.exampleBox_large {
+  width: 600px;
+}
+
